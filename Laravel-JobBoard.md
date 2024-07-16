@@ -90,3 +90,49 @@ We can let php create the model files through terminal. Go to root project direc
 `php artisan make:model Job/Job`
 
 This creates a Job model inside the Job folder.
+
+You can migrate the table using php artisan migration commands but I created the table manually through phpMyAdmin.
+
+## Controllers
+
+The HomeController.php file returns the home page that we see in the application by default.
+
+To import classes or objects from other files, we use this:
+
+`use App\Models\Job\Job;`
+
+To fetch data from Jobs table using Jobs model, this is the way in laravel in the controller:
+
+```php
+public function index()
+    {
+        $jobs = Job::select()->take(5)->orderby('id', 'desc')->get();
+        $totalJobs = Job::all()->count();
+
+        return view('home', compact('jobs', 'totalJobs'));
+    }
+```
+
+### What Does compact() Do?
+
+compact() is a PHP function that creates an array containing variables and their values.
+It takes a variable number of arguments, each of which should be a string containing the name of a variable.
+The resulting array has keys corresponding to the variable names and values corresponding to the variable values.
+
+### Why Is It Necessary in This Context?
+
+In the given code, compact('jobs', 'totalJobs') creates an array with two keys: 'jobs' and 'totalJobs'.
+The values associated with these keys are the values of the $jobs and $totalJobs variables, respectively.
+This array is then passed to the view() function, which renders the specified view (in this case, 'home') and makes these variables available within that view.
+
+In summary, compact() simplifies passing multiple variables to a view by automatically creating an associative array of variable names and their values123.
+
+- To use the variables and data we got in the controller in home.blade.php:
+
+```php
+@foreach ($jobs as $job)
+<img src="{{ asset('assets/images'.$job->image.'') }}" alt="Free Website Template by Free-Template.co" class="img-fluid">
+
+<span class="icon-room"></span> {{$job->job_region}}
+@endforeach
+```
