@@ -136,3 +136,42 @@ In summary, compact() simplifies passing multiple variables to a view by automat
 <span class="icon-room"></span> {{$job->job_region}}
 @endforeach
 ```
+
+Create a Jobs controller for displaying single Job details with:
+
+`php artisan make:controller Jobs/JobsController`
+
+Write this function in JobController to get single Job details:
+
+```php
+    public function single($id)
+    {
+        $job = Job::find($id);
+        return view('jobs.single', compact('job'));
+    }
+```
+
+## Routing
+
+To route this view, go to `\resources\routes\web.php` and add the route.
+
+```php
+Route::get('/jobs/single/{id}', [App\Http\Controllers\Jobs\JobsController::class, 'single'])->name('single.job');
+```
+
+Make sure all the proper modules are imported.
+
+To render the view, we need to create a blade.php file in `\resources\views\jobs\single.blade.php`
+
+To route some link to a page with router in href, you can use the name you set in web.php.
+
+```php
+<a href="{{ route('single.job', $job->id) }}"></a>
+```
+
+We can get the job model values by:
+
+```php
+{{$job->company}}
+<h2>{{$job->job_title}}</h2>
+```
