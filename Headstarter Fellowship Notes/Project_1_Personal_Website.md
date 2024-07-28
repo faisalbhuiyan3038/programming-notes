@@ -86,6 +86,7 @@ Most products use mixpanel or posthog.
 
 ## SEO Checklist
 
+Here's a great <a href="/SEO_Checklist.docx">SEO Checklist you can check out.
 Top 3 things to takeaway are:
 
 - Meta tags
