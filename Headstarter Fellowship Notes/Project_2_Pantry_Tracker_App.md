@@ -63,3 +63,7 @@ useEffect(() => {
   updateInventory();
 }, []);
 ```
+
+To start off, just fetch the data from firebase and check with console.log whether the data is being fetched properly.
+
+Then, create working helper functions. For example, to remove items from db, add to db, update db, etc.
