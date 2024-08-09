@@ -1,5 +1,22 @@
 # Pantry Tracker App
 
+## Resources
+
+- https://medium.com/@billzhangsc/building-an-inventory-management-app-with-next-js-react-and-firebase-e9647a61eb82
+- https://www.youtube.com/watch?v=uikATllLdRc - Build a NextJS app With Firebase
+- https://www.youtube.com/watch?v=2HBIzEx6IZA - How to deploy NextJS app with Vercel
+- https://www.youtube.com/watch?v=FB-sKY63AWo - Learn Material UI in 10 mins
+- https://www.youtube.com/watch?v=vwSlYG7hFk0 - 12 Concepts to know Next.js
+- https://www.youtube.com/watch?v=d5x0JCZbAJs - Modern React Tutorial (Next.js)
+- https://www.youtube.com/watch?v=p9pgI3Mg-So - What is Firebase and how to use it
+- https://www.youtube.com/watch?v=ZjkS11DSeEk - OpenAI Vision API Crash course - Chat with Images
+- https://www.npmjs.com/package/react-camera-pro - React Mobile Camera
+- https://www.youtube.com/watch?v=8jM9Gmm9Bsw - Training an image classification model with Vertex AI
+- https://cloud.google.com/vertex-ai/docs/tutorials/image-classification-automl/training - Train an AutoML Image Classification model
+- https://openrouter.ai/models/meta-llama/llama-3.1-8b-instruct:free - Free API to access LLama 3.1 LLM
+
+### Start
+
 After you have installed nodeJS, create a new nextjs app with
 
 ```bash

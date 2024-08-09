@@ -1,5 +1,19 @@
 # Creating a Personal Landing Page / Portfolio
 
+## Resources
+
+- https://html5up.net/
+- https://www.youtube.com/watch?v=dbgEWWBvIxY - Connect Github Pages to GoDaddy Domain
+- https://www.youtube.com/watch?v=oIsf9zE-TRI - Deploy HTML/JS Website through vercel
+- https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site - Records for DNS management with Github Pages
+- https://docs.google.com/document/d/1JtppELBKD5mZJPR7-m7dsFoZUUtqPwEz8ZLvyLkFpuI/edit?usp=sharing - SEO Checklist
+- https://www.youtube.com/watch?v=FbMJSfZ_kXM - Connect Google Analytics to HTML Web Page
+- https://www.youtube.com/watch?v=2woWjkED-vg - Connect Google Analytics to React/NextJS app
+- https://vercel.com/templates/next.js/portfolio-starter-kit - Portfolio starter kit template
+- https://vercel.com/templates/next.js/nextjs-commerce - Product Landing Page template
+
+### Start
+
 - It's important to maintain a personal landing page as a Software Developer, with regular updates.
 - Best if it's SEO-optimized and has Google Analytics for tracking users visiting the page.
 
