@@ -2,6 +2,10 @@
 
 ## Resources
 
+Videos: https://www.loom.com/share/bab95d161c5745d2abf30d480f6029c5?start-embed-anon-signup=true
+
+https://www.loom.com/share/481e6cb6cf1746959becfeca367d032d?start-embed-anon-signup=true
+
 - https://medium.com/@billzhangsc/building-an-inventory-management-app-with-next-js-react-and-firebase-e9647a61eb82
 - https://www.youtube.com/watch?v=uikATllLdRc - Build a NextJS app With Firebase
 - https://www.youtube.com/watch?v=2HBIzEx6IZA - How to deploy NextJS app with Vercel
@@ -14,6 +18,30 @@
 - https://www.youtube.com/watch?v=8jM9Gmm9Bsw - Training an image classification model with Vertex AI
 - https://cloud.google.com/vertex-ai/docs/tutorials/image-classification-automl/training - Train an AutoML Image Classification model
 - https://openrouter.ai/models/meta-llama/llama-3.1-8b-instruct:free - Free API to access LLama 3.1 LLM
+
+### Tasks
+
+- Set up a Next.js project with Material UI components
+
+- Implement a Firebase backend for data storage
+
+- Create a form to add, delete, and update pantry items
+
+- Add a search or filter functionality to easily find items
+
+- Create a presentable frontend design to display all pantry items
+
+- Deploy to Vercel and use CI/CD
+
+- By Sunday 8/4 6pm EST, make a Reddit post titled [Project 2 | Name | Difficulty Level 1/2/3/4] with your deployed application link
+
+- Bonus: Take images with mobile or browser camera and upload to Firebase
+
+- Bonus: Use GPT Vision API or other LLMs to classify images and then update to Firebase
+
+- Bonus: Use GCP Vertex AI and AutoML to classify 4-5 images of items near you and update Firebase
+
+- Bonus: Add a recipe suggestion feature based on pantry contents using the OpenAI API or OpenRouter API
 
 ### Start
 
