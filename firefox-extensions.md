@@ -53,5 +53,5 @@ Run `web-ext lint` to make sure there are no compatibility issues.
 Command to install addon in firefox android and test it. USB debugging must be turned on in Firefox android for this to work.
 
 ```bash
-web-ext run -t firefox-android --adb-device XXX --firefox-apk org.mozilla.firefox
+web-ext run -t firefox-android --adb-device R58T109NVJJ --firefox-apk org.mozilla.firefox
 ```
