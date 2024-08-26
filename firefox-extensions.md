@@ -55,3 +55,8 @@ Command to install addon in firefox android and test it. USB debugging must be t
 ```bash
 web-ext run -t firefox-android --adb-device R58T109NVJJ --firefox-apk org.mozilla.firefox
 ```
+
+### Firefox Extension Development Bugs
+Android unfortunately has limitations on exporting or downloading files from an extension. To bypass it, you can create a temporary `<a>` element, setting its href to a data URL, and programmatically clicking it. However, the comments suggest this method doesn't work well in Firefox panels.
+
+Another limitation is user cannot change the downloaded file's name in Android.
