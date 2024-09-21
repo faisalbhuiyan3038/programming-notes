@@ -18,3 +18,23 @@ model Snippet{
 }
 ```
 - To save this model, you will need to migrate these changes with the command `npx prisma migrate dev`
+
+### Steps to create DB records
+- Create a prisma client to access the db.
+    - Create a db/index.ts file in src/app directory.
+    ```ts
+    import {PrismaClient} from '@prisma/client';
+    export const db = new PrismaClient();
+    // we will use this db to perform various action on db, like create, update, delete.
+    //for create
+    db.snippet.create({
+      data: {
+        title: 'Title!',
+        code: 'const abc => {}'
+      }
+    })
+    ```
+- Create a form in SnippetCreatePage.
+- Define a server action. This is a function that will be called when the form is submitted.
+- In the server action, validate the users input then create a new snippet.
+- Redirect the user to the HomePage, which lists all the snippets.

@@ -223,6 +223,10 @@ export default function ReliabilityPage() {
 
 - loading.tsx - This is an optional file used to create loading UI for a specific part of your app. Automatically wraps a page or child layout with React Suspense Boundary, showing your loading component immediately on first load and when navigating between sibling routes.
 
+- not-found.tsx - Displayed when we call the 'notFound' function
+
+-loading.tsx - Displayed when a server component is fetching some data
+
 - error.tsx - Optional file that helps to isolate errors to specific parts of an app, show error info, and functionality to recover from error.
 
 - template.tsx - Optional file, similar to layouts, except on navigation, a new instance of component is mounted and state is not shared. Template can be used in cases like Enter/Exit animations.
