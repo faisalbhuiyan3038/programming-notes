@@ -62,3 +62,23 @@ localStorage.setItem("key", value);
 - everything you save in localStorage needs to be in string format.
 
 -  you can retrieve it with getItem() by specifying the key you used to save the item.
+
+- Rather than check if a value is equal to a falsy value, you can use the logical NOT operator (!) to check if the value itself is falsy. For example:
+```js
+const num = 0;
+
+console.log(num === 0); // true
+console.log(!num); // true
+```
+
+- A good way to check and normalize numbers in JavaScript is to use the built-in parseInt() function, which converts a string into an integer or whole number. parseInt() takes at least one argument, a string to be converted into an integer, and returns either an integer or NaN which stands for Not a Number.
+
+- you need to check if the value returned by the parseInt() function is a number or not.
+
+- To do that, you can use the isNaN() function. This function takes in a string or number as an argument, and returns true if it evaluates to NaN.
+
+- Next, you need to calculate the remainder of input divided by 2. You can do this by using the remainder operator (%), which returns the remainder of the division of two numbers.
+```js
+const remainder = 5 % 2; // 1
+```
+
